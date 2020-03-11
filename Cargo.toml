@@ -1,0 +1,43 @@
+[package]
+name = "wgpu-web-example"
+version = "0.1.0"
+authors = ["William Lundstedt <walundstedt@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+console_error_panic_hook = "0.1.6"
+console_log = "0.1.2"
+log = "0.4"
+wasm-bindgen = "=0.2.59"
+wasm-bindgen-futures = "0.4.9"
+wgpu = { path = "../wgpu-rs/" }
+zerocopy = "0.2"
+
+[dependencies.web-sys]
+version = "0.3.23"
+features = [
+    "Document",
+    "Element",
+    "HtmlElement",
+    "KeyboardEvent",
+    "MessageEvent",
+    "MouseEvent",
+    "Performance",
+    "RequestInit",
+    "Response",
+    "RtcConfiguration",
+    "RtcDataChannel",
+    "RtcDataChannelInit",
+    "RtcDataChannelState",
+    "RtcDataChannelType",
+    "RtcIceCandidateInit",
+    "RtcPeerConnection",
+    "RtcSdpType",
+    "RtcSessionDescription",
+    "RtcSessionDescriptionInit",
+    "WheelEvent",
+    "Window",
+    "console",
+]

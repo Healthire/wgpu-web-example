@@ -1,0 +1,13 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src='./wgpu-web-example.js'></script>
+    <script>
+        window.addEventListener("load", () => {
+            wasm_bindgen('./wgpu-web-example_bg.wasm').catch(console.error);
+        })
+    </script>
+</head>
+
+</html>
